@@ -1,0 +1,20 @@
+{
+  "name": "random-quo",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Hata: Test belirtilmedi.\" && exit 1"
+  },
+  "keywords": [],
+  "author": "TheNoctua",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

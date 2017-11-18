@@ -1,0 +1,42 @@
+{
+    "quotes": [{
+        "quote": "Sıkça açıkladığım gibi, tüm duyguları tiksindirici buluyorum.",
+        "movie": "Sherlock",
+        "info":"TV Series 2010– "
+    },
+    {
+        "quote": "Asla istedikleri kişi olma.",
+        "movie": "Logan",
+        "info": "2017"
+    },
+    {
+        "quote": "İnsanlara aşık oldum, cinsel organlarına değil.",
+        "movie": "Sense8",
+        "info": ""
+    },
+    {
+        "quote": "Bazen saçmalarsın. Sırf birkaç dakika daha fazla konuşabilmek için.",
+        "movie": "Sin City",
+        "info": "2005"
+    },
+    {
+        "quote": "Ne zaman mutlu olsam, acaba ne zaman mutluluğum bozulacak diye düşünüp mutsuz oluyorum.",
+        "movie": "The Informant",
+        "info": "2009"
+    },
+    {
+        "quote": "Hiçbir yara izim olmadan ölmek istemiyorum.",
+        "movie": "Fight Club",
+        "info": "1999"
+    },
+    {
+        "quote": "Seni dünyaya bağlayan insanı bulduğunda farklı biri oluyorsun. Daha iyi biri.",
+        "movie": "Person of Interest",
+        "info": "TV Series 2011–2016"
+    },
+    {
+        "quote": "Bazı insanlar, dünyanın alevler içinde kalışını seyretmek ister.",
+        "movie": "The Dark Knight",
+        "info": "2008"
+    }]
+}
