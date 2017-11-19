@@ -1,8 +1,9 @@
-const express = require('express');
-const router = express.Router();
-const Data = require('../models/data.js');
+ const express = require('express');
+ const router = express.Router();
+const Data= require('../models/quote-model.js');
 
-router.get('/quote/all', function(req, res){
+
+router.get('/all', function(req, res){
     Data.find({}).then(function(data){
         var response = {
             statusCode: 200,
@@ -14,7 +15,7 @@ router.get('/quote/all', function(req, res){
     });
 });
 
-router.get('/quote/:count', function(req, res){
+router.get('/:count', function(req, res){
     Data.find({}).then(function(data){
         var response = {};
         if(req.params.count > data.length) {
@@ -36,7 +37,7 @@ router.get('/quote/:count', function(req, res){
     });
 });
 
-router.get('/quote', function(req, res){
+router.get('/', function(req, res){
     Data.find({}).then(function(data){
         var arrLength = data.length;
         var randomIndex = getRandomInt(0, arrLength);
@@ -49,9 +50,14 @@ router.get('/quote', function(req, res){
     });
 });
 
-router.post('/quote', function(req, res){
-    Data.create(req.body).then(function(data){
-        res.send(data);
+router.post('/', function(req, res){
+    new Data(req.body).save().then((newQuote) => {
+        var response = {
+            statusCode: 200,
+            status: "OK",
+            quote: req.body
+        }
+        res.send(response);
     });
 });
 
@@ -60,4 +66,4 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
-module.exports = router;
+ module.exports = router;
